@@ -1,0 +1,29 @@
+.microtask {
+    display: flex;
+    width: 20em;
+    height: 12em;
+    justify-content: center;
+    padding: 1.25em;
+    border-radius: 0.75rem;
+    transition: 0.3s ease-in-out;
+
+    &:hover {
+        transform: translate(-0.3em, -0.3em);
+        box-shadow: 0.3em 0.3em 0px 0px rgb(226, 213, 200);
+    }
+
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        column-gap: 0.5em;
+    }
+
+    &__title {
+        font-size: 2.5em;
+    }
+
+    &__description {
+        font-size: 1.5em;
+    }
+}
