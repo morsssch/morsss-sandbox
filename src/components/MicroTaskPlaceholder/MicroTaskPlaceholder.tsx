@@ -1,5 +1,4 @@
 
-import React from 'react';
 import './MicroTaskPlaceholder.scss';
 
 export const MicroTaskPlaceholder = () => {
