@@ -9,7 +9,7 @@ import { PostsFeed } from "./pages/PostsFeed";
 
 const App: React.FC = () => {
     return (
-        <BrowserRouter>
+        <BrowserRouter basename="/morsss-sandbox">
             <Routes>
                 <Route element={<MainLayout />}>
                     <Route index element={<Home />}></Route>
