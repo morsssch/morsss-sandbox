@@ -1,0 +1,11 @@
+.taskHeader {
+    display: flex;
+    padding: 0.5em 0;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+
+    &__title {
+        font-size: 2em;
+    }
+}

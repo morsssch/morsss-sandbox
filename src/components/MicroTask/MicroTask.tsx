@@ -20,7 +20,7 @@ export const MicroTask: React.FC<MicroTaskProps> = ({
         setBgColor(randomColor());
     }, []);
     return (
-        <Link to={path}>
+        <Link to={path} state={{ title: title }}>
             <div className="microtask" style={{ backgroundColor: bgColor }}>
                 <div className="microtask__inner">
                     <h3 className="microtask__title">{title}</h3>

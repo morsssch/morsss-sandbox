@@ -3,49 +3,8 @@ import React, { useEffect, useState } from "react";
 import "./Home.scss";
 import { MicroTask } from "../../components/MicroTask/MicroTask";
 import { MicroTaskPlaceholder } from "../../components/MicroTaskPlaceholder";
+import tasks from '../../constants/microTasks.json'
 export const Home: React.FC = () => {
-    const tasks = [
-        {
-            title: "Счётчик",
-            description: "С использованием замыкания",
-            path: "counter",
-        },
-        {
-            title: "Счётчик",
-            description: "С использованием замыкания",
-            path: "counter",
-        },
-        {
-            title: "Счётчик",
-            description: "С использованием замыкания",
-            path: "counter",
-        },
-        {
-            title: "Счётчик",
-            description: "С использованием замыкания",
-            path: "counter",
-        },
-        {
-            title: "Счётчик",
-            description: "С использованием замыкания",
-            path: "counter",
-        },
-        {
-            title: "Счётчик",
-            description: "С использованием замыкания",
-            path: "counter",
-        },
-        {
-            title: "Счётчик",
-            description: "С использованием замыкания",
-            path: "counter",
-        },
-        {
-            title: "Счётчик",
-            description: "С использованием замыкания",
-            path: "counter",
-        },
-    ];
 
     const [phantomTasks, setPhantomTasks] = useState<number>(0);
 
@@ -70,7 +29,7 @@ export const Home: React.FC = () => {
 
         observer.observe(container);
         return () => observer.disconnect();
-    }, [tasks.length]);
+    }, []);
 
     return (
         <>
