@@ -6,6 +6,7 @@ import { Home } from "./pages/Home";
 import { MainLayout } from "./layouts/MainLayout";
 import { TaskLayout } from "./layouts/TaskLayout";
 import { PostsFeed } from "./pages/PostsFeed";
+import { Counter } from "./pages/Counter";
 
 const App: React.FC = () => {
     return (
@@ -16,6 +17,7 @@ const App: React.FC = () => {
 
                     <Route element={<TaskLayout />}>
                         <Route path="/feed" element={<PostsFeed />}></Route>
+                        <Route path="/counter" element={<Counter />}></Route>
                         <Route path="*" element={<NotFound />}></Route>
                     </Route>
                 </Route>

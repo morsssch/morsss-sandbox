@@ -1,0 +1,29 @@
+.counter {
+
+    &__wrapper {
+        font-size: 1rem;
+        margin-top: 5em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__value {
+        font-size: 3em;
+        margin-bottom: 1em;
+    }
+
+    &__button-container {
+        display: flex;
+        justify-content: space-between;
+        gap: 1em;
+        font-size: 0.75em;
+    }
+    &__saved-values {
+        display: flex;
+        flex-direction: column;
+        font-size: 2em;
+        gap: 0.75em;
+        margin-top: 1em;
+    }
+}

@@ -3,5 +3,10 @@
       "title": "Посты (одна страница)",
       "description": "С сайта JSONplaceholder",
       "path": "feed"
+    },
+    {
+      "title": "Секундомер",
+      "description": "С возможностью сохранения результатов",
+      "path": "counter"
     }
 ]
